@@ -117,12 +117,13 @@ footer img{
     padding: 0.5rem;
 }
 .image-container{
-    /* background-color: gold; */
-    width: 35%;
+    width: 40%;
+    height: 90%;
     background-image: url("./IMAGE.png");
-    background-size: 100%;
+    background-size: cover;    
     background-repeat: no-repeat;
     background-position: center;
+    margin: 1rem 0;
 }
 
 .cards-container{
@@ -166,11 +167,12 @@ margin: 0 1rem;}
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
-}#kpmg{
-    background-image: url("./kpmg.svg");
+}#amazon{
+    background-image: url("./amazon.svg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: contain;
+    margin-top: 2rem;
 }
 
 #project1{
@@ -231,4 +233,24 @@ margin: 0 1rem;}
     border-right: 1.5px solid #008BC7;
 
    }
+}
+
+@media screen and (max-width: 800px){
+    html{
+        font-size: 60%;
+    }
+    .main-body{
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .image-container{
+        height: 60%;
+        width: 60%;
+        top: 0;
+    }
+    footer{
+        font-size: 1.5rem;
+    }
 }
